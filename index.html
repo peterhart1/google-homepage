@@ -3,12 +3,60 @@
     </head>
     <body>
         <style>
-            img{
-                align-self: center;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                }
+            li {
+            display: inline;
+            font-family: arial;
+            display: block;
+            padding: 12px;
+            }
+            .left{
+                font-size: 14px;
+                float:left;
+            }
+            .right{
+                font-size: 13px;
+                float:right;
+            }
+            .Main_body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20vh;
+                }
+            
+            #searchbox{
+                padding: 10px;
+                padding-inline: 185px;
+                margin-top: 35px;
+            }
+            #buttons{
+                margin-top: 35px;
+                padding: 7px;
+                border-style: hidden;
+                flex-direction: row;
+                align-items: stretch;
+                
             }
         </style>
-        <div class="Main image">
-            <img id="google" src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/368px-Google_2015_logo.svg.png>
-        </div>  
+        <ul>
+            <li class="left">About</li>
+            <li class="left">Store</li>
+            <li class="right">Images</li>
+            <li class="right">Gmail</li>
+        </ul>
+        <div class="Main_body">
+            <div><img id="google" class="center" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png></div>
+            <div><input id="searchbox" type="search" class="center"></div>
+            <div id="buttons">
+                <button id="Google_search">Google Search</button>
+                <button id="lucky">I'm Feeling Lucky</button>
+            </div>
+        </div>
     </body>
 </html>
