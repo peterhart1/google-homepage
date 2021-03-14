@@ -1,1 +1,1 @@
-A list of skills I've learned while building this page
+homepage can be found at peterhart1.github.io/google-homepage
